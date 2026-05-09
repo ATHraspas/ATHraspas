@@ -6,7 +6,7 @@ import { ModulePage } from './ModulePage';
 export function AppShell() {
   const [selected, setSelected] = useState('ae-tracking');
   const [open, setOpen] = useState(false);
-  const module = useMemo(() => modules.find((m) => m.id === selected) ?? modules[0], [selected]);
+  const activeModule = useMemo(() => modules.find((m) => m.id === selected) ?? modules[0], [selected]);
 
   return (
     <div className="min-h-screen bg-paper p-3 md:p-5">
@@ -30,7 +30,7 @@ export function AppShell() {
             ))}
           </nav>
         </aside>
-        <main><ModulePage module={module} /></main>
+        <main><ModulePage module={activeModule} /></main>
       </div>
 
       <div className="fixed bottom-3 left-1/2 -translate-x-1/2 md:hidden brutal-card bg-white px-2 py-1 flex gap-2 z-30">
