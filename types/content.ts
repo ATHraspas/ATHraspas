@@ -1,10 +1,11 @@
 export type GlossaryTerm = { term: string; tr: string; desc: string; adExample: string };
 export type Mistake = { problem: string; reason: string; solution: string };
 export type Resource = { title: string; platform: string; language: string; duration: string; level: string; learn: string; practice: string; url?: string };
+
 export type Assignment = {
   id: string;
   title: string;
-  level: 'Kolay' | 'Orta' | 'Zor' | 'Müşteri Simülasyonu';
+  level: string;
   goal: string;
   adMatch: string;
   programs: string[];
