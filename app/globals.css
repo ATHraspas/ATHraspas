@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 :root { color: #000; background: #F5F1E6; }
-body { background: #F5F1E6; color: #000; font-family: Inter, Arial, sans-serif; }
+body { background: #F5F1E6; color: #000; font-family: Inter, Arial, sans-serif; font-size: 14px; line-height: 1.6; }
 .brutal-card { @apply border-[3px] border-black rounded-[4px] bg-white shadow-[6px_6px_0_#000]; }
 .section-label { @apply inline-block border-[3px] border-black bg-yellow px-2 py-1 text-[11px] font-black uppercase tracking-wider; }
